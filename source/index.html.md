@@ -38,7 +38,7 @@ curl "api_endpoint_here" \
 
 > Make sure to replace `[client-id]` and `[client-secret]` with your project's credentials.
 
-Malunak uses API keys to allow access to the API. You can register a new project and get Malunak client ID and secret at our [developer portal](https://kolas.pkasila.net/).
+Malunak uses API keys to allow access to the API. You can register a new project and get Malunak client ID and secret at our [developer portal](https://dash.malunak.dev/).
 
 Malunak expects for the API key to be included in all API requests to the server in a header that looks like the following:
 
@@ -54,7 +54,7 @@ You must replace <code>[client-id]:[client-secret]</code> with your personal cli
 
 ```shell
 curl -X 'POST' \
-  'https://kupala.pkasila.net/predict' \
+  'https://kupala.malunak.dev/predict' \
   -H 'X-Malunak-Token: [client-id]:[client-secret]' \
   -H 'Content-Type: multipart/form-data' \
   -F 'files=@example0.jpeg;type=image/jpeg' \
@@ -82,7 +82,7 @@ This endpoint predicts whether image(s) is created by human or artificial intell
 
 ### HTTP Request
 
-`POST https://kupala.pkasila.net/predict`
+`POST https://kupala.malunak.dev/predict`
 
 ### Multipart Form Data
 
