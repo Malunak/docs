@@ -5,7 +5,7 @@ language_tabs: # must be one of https://github.com/rouge-ruby/rouge/wiki/List-of
   - shell
 
 toc_footers:
-  - <a href='https://kolas.pkasila.net/'>Sign Up for a Developer Key</a>
+  - <a href='https://dash.malunak.dev/'>Sign Up for a Developer Key</a>
 
 includes:
   - errors
