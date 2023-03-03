@@ -354,7 +354,7 @@ curl <span class="s2">"api_endpoint_here"</span> <span class="se">\</span>
 <p>Make sure to replace <code>[client-id]</code> and <code>[client-secret]</code> with your project&#39;s credentials.</p>
 </blockquote>
 
-<p>Malunak uses API keys to allow access to the API. You can register a new project and get Malunak client ID and secret at our <a href="https://kolas.pkasila.net/">developer portal</a>.</p>
+<p>Malunak uses API keys to allow access to the API. You can register a new project and get Malunak client ID and secret at our <a href="https://dash.malunak.dev/">developer portal</a>.</p>
 
 <p>Malunak expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
 
@@ -364,7 +364,7 @@ curl <span class="s2">"api_endpoint_here"</span> <span class="se">\</span>
 You must replace <code>[client-id]:[client-secret]</code> with your personal client ID and secret.
 </aside>
 <h1 id='ai-image-detection-kupala'>AI Image Detection (Kupala)</h1><h2 id='predict'>Predict</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="nt">-X</span> <span class="s1">'POST'</span> <span class="se">\</span>
-  <span class="s1">'https://kupala.pkasila.net/predict'</span> <span class="se">\</span>
+  <span class="s1">'https://kupala.malunak.dev/predict'</span> <span class="se">\</span>
   <span class="nt">-H</span> <span class="s1">'X-Malunak-Token: [client-id]:[client-secret]'</span> <span class="se">\</span>
   <span class="nt">-H</span> <span class="s1">'Content-Type: multipart/form-data'</span> <span class="se">\</span>
   <span class="nt">-F</span> <span class="s1">'files=@example0.jpeg;type=image/jpeg'</span> <span class="se">\</span>
@@ -388,7 +388,7 @@ You must replace <code>[client-id]:[client-secret]</code> with your personal cli
 </span></code></pre></div>
 <p>This endpoint predicts whether image(s) is created by human or artificial intelligence.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>POST https://kupala.pkasila.net/predict</code></p>
+<p><code>POST https://kupala.malunak.dev/predict</code></p>
 <h3 id='multipart-form-data'>Multipart Form Data</h3>
 <table><thead>
 <tr>
